@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <section class="menu">
+        <a onclick="return false" class="shopBtn">Shopping</a>
+        <a onclick="return false" class="cartBtn">view cart</a>
+    </section>
+    <section class="shop">
+        <div class="item-container">
+        </div>
+    </section>
+    <section class="cart">
+       <table>
+           <thead class="thead">
+               <tr>
+                   <th colspan='2'>item</th>
+                   <th>price</th>
+                   <th colspan="2">quantity</th>
+               </tr>
+           </thead>
+           <tbody class="tbody">
+
+            <tr class="totalRow">
+                <td colspan="5">Total:  $0.00</td>
+            </tr>
+           </tbody>
+       </table> 
+       <button class="btn checkout-btn" disabled>checkout</button>
+    </section>
+<script src="https://js.stripe.com/v3/"></script>
+ <script src="script.js" defer></script>   
+</body>
+</html>
